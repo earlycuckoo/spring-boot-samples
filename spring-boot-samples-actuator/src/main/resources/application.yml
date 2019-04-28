@@ -1,0 +1,15 @@
+management:
+  # 开启所有端点
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  server:
+    port: 10111
+    servlet:
+      context-path: /
+    ssl:
+      enabled: false
+  endpoint:
+    health:
+      show-details: always
